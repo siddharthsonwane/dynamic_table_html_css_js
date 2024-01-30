@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table with Accept/Reject Checkboxes</title>
+    <link rel="stylesheet" href="Final.css">
+</head>
+<body>
+
+    <h2>Dynamic Table Example with Accept/Reject Checkboxes and Comments</h2>
+    <h2>Filter and Search</h2>
+    <div>
+        <label for="filterDropdown">Location:</label>
+        <select id="filterDropdown" onchange="handleFilterChange()">
+            <option value="all">All</option>
+            <option value="accept">Accept</option>
+            <option value="reject">Reject</option>
+        </select>
+
+        <label for="searchInput">Identifier:</label>
+        <input type="text" id="searchInput" oninput="handleSearchInput()">
+        
+
+        <label for="filterDropdown">Search:</label>
+        <select id="filterDropdown" onchange="handleFilterChange()">
+            <option value="all">All</option>
+            <option value="accept">Accept</option>
+            <option value="reject">Reject</option>
+        </select>
+
+    </div>
+    <div id="table-container"></div>
+    <button id="submitBtn" disabled onclick="handleSubmit()">Submit</button>
+
+    <script src="Final.js"></script>
+</body>
+</html>

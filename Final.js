@@ -1,0 +1,255 @@
+// Sample JSON data
+var jsonData = [
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" },
+    { "Name": "John Doe", "Age": 25, "City": "New York" },
+    { "Name": "Jane Smith", "Age": 30, "City": "San Francisco" },
+    { "Name": "Bob Johnson", "Age": 22, "City": "Los Angeles" }
+    // Add more data as needed
+];
+
+var selectedData = [];
+
+// Function to generate dynamic table
+function generateTable(data) {
+    var tableContainer = document.getElementById("table-container");
+
+    var table = document.createElement("table");
+    var thead = document.createElement("thead");
+    var tbody = document.createElement("tbody");
+    
+    // Create table header
+    var headerRow = document.createElement("tr");
+    var acceptHeader = document.createElement("th");
+    
+    
+    for (var key in data[0]) {
+        var th = document.createElement("th");
+        th.textContent = key;
+        headerRow.appendChild(th);
+    }
+    
+    acceptHeader.textContent = "Accept";
+    headerRow.appendChild(acceptHeader);
+    
+    var rejectHeader = document.createElement("th");
+    rejectHeader.textContent = "Reject";
+    headerRow.appendChild(rejectHeader);
+    var commentHeader = document.createElement("th");
+    commentHeader.textContent = "Comment";
+    headerRow.appendChild(commentHeader);
+    
+    thead.appendChild(headerRow);
+    
+    // Create table rows and cells
+    data.forEach(function (item) {
+        var row = document.createElement("tr");
+    
+       
+    
+        // Create data cells
+        for (var key in item) {
+            var cell = document.createElement("td");
+            cell.textContent = item[key];
+            row.appendChild(cell);
+        }
+    
+         // Create checkbox cell for Accept
+         var acceptCell = document.createElement("td");
+        var acceptCheckbox = document.createElement("input");
+        acceptCheckbox.type = "checkbox";
+        acceptCheckbox.name = "acceptReject";
+        acceptCheckbox.value = "Accept";
+        acceptCheckbox.addEventListener("change", function() {
+            handleCheckboxChange(item, "Accept");
+        });
+        acceptCell.appendChild(acceptCheckbox);
+        row.appendChild(acceptCell);
+    
+        // Create checkbox cell for Reject
+        var rejectCell = document.createElement("td");
+        var rejectCheckbox = document.createElement("input");
+        rejectCheckbox.type = "checkbox";
+        rejectCheckbox.name = "acceptReject";
+        rejectCheckbox.value = "Reject";
+        rejectCheckbox.addEventListener("change", function() {
+            handleCheckboxChange(item, "Reject");
+        });
+        rejectCell.appendChild(rejectCheckbox);
+        row.appendChild(rejectCell);
+        // Create comment input cell
+        var commentCell = document.createElement("td");
+        var commentInput = document.createElement("input");
+        commentInput.type = "text";
+        commentInput.className = "comment-input";
+        commentInput.placeholder = "Enter your comment";
+        commentInput.addEventListener("input", function() {
+            handleCommentInput(item, commentInput.value);
+        });
+        commentCell.appendChild(commentInput);
+        row.appendChild(commentCell);
+    
+        tbody.appendChild(row);
+    });
+    
+    // Append everything to the table
+    table.appendChild(thead);
+    table.appendChild(tbody);
+    
+    // Append table to the container
+    tableContainer.appendChild(table);
+}
+
+// Function to handle checkbox change
+function handleCheckboxChange(selectedItem, selectedOption) {
+    // Uncheck the opposite checkbox in the same row
+    var checkboxes = document.querySelectorAll('input[name="acceptReject"]');
+    checkboxes.forEach(function(checkbox) {
+        if (checkbox.parentElement.parentElement.contains(event.target.parentElement) && checkbox !== event.target) {
+            checkbox.checked = false;
+        }
+    });
+
+    // If the checkbox is checked, add the selected data to the array
+    if (event.target.checked) {
+        // Check if the item is already in the selectedData array
+        var existingIndex = selectedData.findIndex(function (item) {
+            return item.item === selectedItem;
+        });
+
+        if (existingIndex !== -1) {
+            // If it exists, update the option
+            selectedData[existingIndex].option = selectedOption;
+        } else {
+            // If it doesn't exist, add it to the array
+            selectedData.push({ item: selectedItem, option: selectedOption, comment: "" });
+        }
+    } else {
+        // If the checkbox is unchecked, remove the selected data from the array
+        selectedData = selectedData.filter(function (item) {
+            return item.item !== selectedItem;
+        });
+    }
+
+    // Enable the "Submit" button if there's at least one selection
+    document.getElementById("submitBtn").disabled = selectedData.length === 0;
+}
+
+// Function to handle comment input
+function handleCommentInput(selectedItem, comment) {
+    // Update the comment in the selectedData array
+    var existingIndex = selectedData.findIndex(function (item) {
+        return item.item === selectedItem;
+    });
+
+    if (existingIndex !== -1) {
+        selectedData[existingIndex].comment = comment;
+    }
+}
+
+// Function to handle submit button click
+function handleSubmit() {
+    if (selectedData.length > 0) {
+        // Perform any action with the selected data here
+        alert("Submit clicked for: " + selectedData.map(function(item) {
+            return item.option + " - " + item.item.Name + " (Comment: " + item.comment + ")";
+        }).join(", "));
+    }
+}
+
+// Call the function with your JSON data
+generateTable(jsonData);
